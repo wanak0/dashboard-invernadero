@@ -22,7 +22,7 @@ export default function GraficoHistorial() {
     const fetchHistorial = async () => {
       try {
         // Ahora le mandamos el parámetro de horas a la API
-        const response = await fetch(`/https://api-invernadero-pq16.onrender.com/api/lecturas/historial?horas=${horas}`);
+        const response = await fetch(`https://api-invernadero-pq16.onrender.com/api/lecturas/historial?horas=${horas}`);
         
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
 
