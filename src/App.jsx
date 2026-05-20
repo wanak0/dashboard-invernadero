@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const obtenerDatosActuales = async () => {
       try {
-        const response = await fetch('/https://api-invernadero-pq16.onrender.com/api/lecturas/actual');
+        const response = await fetch('https://api-invernadero-pq16.onrender.com/api/lecturas/actual');
         
         if (!response.ok) {
           throw new Error(`Error en el servidor: ${response.status}`);
