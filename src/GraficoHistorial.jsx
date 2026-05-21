@@ -31,7 +31,7 @@ export default function GraficoHistorial() {
         if (Array.isArray(rawData)) {
           const datosFormateados = rawData.map(item => ({
             ...item,
-            hora: new Date(item.fecha_hora).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            hora: new Date(item.fecha_hora + 'Z').toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           }));
           setDatos(datosFormateados);
         } else {

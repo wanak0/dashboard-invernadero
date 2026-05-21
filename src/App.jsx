@@ -58,7 +58,7 @@ return (
         </div>
         <div className="text-sm text-gray-500 text-right">
           Última actualización: <span className="text-gray-300">
-            {sensorData.fecha_hora ? new Date(sensorData.fecha_hora).toLocaleTimeString() : 'En vivo'}
+            {sensorData.fecha_hora ? new Date(sensorData.fecha_hora+'Z').toLocaleTimeString() : 'En vivo'}
           </span>
         </div>
       </header>
